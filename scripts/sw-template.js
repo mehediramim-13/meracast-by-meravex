@@ -1,0 +1,225 @@
+/*
+ * MeraCast service worker template.
+ *
+ * `scripts/generate-sw.mjs` replaces __BUILD_VERSION__ on every build. The
+ * version is derived from the build time, so a new deployment always gets new
+ * cache names and browsers cannot keep serving HTML from an older build.
+ *
+ * Strategy:
+ *  - Navigations: network only; a self-contained inline page is the fallback.
+ *  - Hashed Next assets, fonts and icons: cache first, validated by MIME type.
+ *  - API responses: never cached here; TanStack Query owns offline app data.
+ *  - No HTML document is ever cached, so stale CSS/JS references cannot survive.
+ */
+
+const VERSION = "__BUILD_VERSION__";
+const CACHE_PREFIX = "meracast-";
+const ASSET_CACHE = `${CACHE_PREFIX}${VERSION}-assets`;
+const SHELL_CACHE = `${CACHE_PREFIX}${VERSION}-shell`;
+const CURRENT_CACHES = new Set([ASSET_CACHE, SHELL_CACHE]);
+
+const PRECACHE = [
+  "/manifest.webmanifest",
+  "/favicon.svg",
+  "/icons/icon-192.png",
+  "/icons/icon-512.png",
+  "/icons/icon-512-maskable.png",
+  "/icons/apple-touch-icon.png",
+];
+
+const MAX_ASSET_ENTRIES = 120;
+
+const OFFLINE_FALLBACK_HTML = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050d16">
+<title>MeraCast — Offline</title>
+<style>
+html{color-scheme:dark}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 0,#0d2638 0,#050d16 55%);color:#eaf6ff;font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+main{width:calc(100% - 2rem);max-width:34rem;margin:1rem;padding:2rem;border:1px solid #1c3348;border-radius:1.5rem;background:#091827;box-shadow:0 24px 80px #0008;text-align:center}
+.logo{display:grid;place-items:center;width:3.25rem;height:3.25rem;margin:0 auto 1rem;border:1px solid #67e8f955;border-radius:1rem;background:#67e8f915;color:#67e8f9;font-size:1.4rem;font-weight:800}
+.brand{margin:0;color:#eaf6ff;font-weight:700}.brand span{margin-left:.4rem;color:#91a9bf;font-size:.75rem;font-weight:500}
+h1{margin:1.5rem 0 .5rem;font-size:1.65rem;line-height:1.2}p{margin:0;color:#91a9bf}
+a{display:inline-block;margin-top:1.5rem;padding:.7rem 1.1rem;border-radius:.75rem;background:#67e8f9;color:#04121c;font-weight:800;text-decoration:none}
+a:focus-visible{outline:2px solid #eaf6ff;outline-offset:3px}
+</style>
+</head>
+<body><main><div class="logo" aria-hidden="true">M</div><p class="brand">MeraCast <span>by MeraVex</span></p><h1>You’re offline</h1><p>Reconnect to load the latest forecast. Your last saved data is still within reach.</p><a href="/">Try again</a></main></body>
+</html>`;
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(precacheShellAssets());
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    (async () => {
+      const keys = await caches.keys();
+      await Promise.all(
+        keys
+          .filter((key) => key.startsWith(CACHE_PREFIX) && !CURRENT_CACHES.has(key))
+          .map((key) => caches.delete(key)),
+      );
+      await self.clients.claim();
+    })(),
+  );
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
+async function precacheShellAssets() {
+  const shell = await caches.open(SHELL_CACHE);
+  await Promise.all(PRECACHE.map((url) => precacheAsset(shell, url)));
+}
+
+async function precacheAsset(cache, url) {
+  try {
+    const request = new Request(url, { cache: "reload" });
+    const response = await fetch(request);
+    if (!isUsableResponse(url, response)) return;
+    await cache.put(request, response);
+  } catch {
+    // A missing optional asset must not block service worker installation.
+  }
+}
+
+self.addEventListener("fetch", (event) => {
+  const { request } = event;
+  if (request.method !== "GET") return;
+
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname === "/sw.js" || url.pathname === "/version.json") return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(handleNavigation(request));
+    return;
+  }
+
+  if (isStaticAssetPath(url.pathname)) {
+    event.respondWith(cacheFirstAsset(request));
+  }
+});
+
+async function handleNavigation(request) {
+  try {
+    // HTML is deliberately never stored: a cached document can reference
+    // hashed CSS or JS that no longer exists after a deployment.
+    return await fetch(request);
+  } catch {
+    return offlineFallback();
+  }
+}
+
+function offlineFallback() {
+  return new Response(OFFLINE_FALLBACK_HTML, {
+    headers: {
+      "Cache-Control": "no-store",
+      "Content-Type": "text/html; charset=utf-8",
+    },
+  });
+}
+
+function isStaticAssetPath(pathname) {
+  return (
+    pathname.startsWith("/_next/static/") ||
+    pathname.startsWith("/fonts/") ||
+    pathname.startsWith("/icons/") ||
+    pathname === "/favicon.svg" ||
+    pathname === "/manifest.webmanifest" ||
+    pathname === "/og.png"
+  );
+}
+
+async function cacheFirstAsset(request) {
+  const cache = await caches.open(ASSET_CACHE);
+  const cached = await cache.match(request);
+
+  if (cached) {
+    if (isUsableResponse(request.url, cached)) return cached;
+    try {
+      await cache.delete(request);
+    } catch {
+      // A failed delete must not prevent a network refresh.
+    }
+  }
+
+  try {
+    const response = await fetch(request);
+    if (isUsableResponse(request.url, response)) {
+      try {
+        await cache.put(request, response.clone());
+        void trimCache(ASSET_CACHE, MAX_ASSET_ENTRIES);
+      } catch {
+        // A cache write failure must not fail the network response.
+      }
+    }
+    return response;
+  } catch {
+    return Response.error();
+  }
+}
+
+async function trimCache(cacheName, maxEntries) {
+  const cache = await caches.open(cacheName);
+  const keys = await cache.keys();
+  if (keys.length <= maxEntries) return;
+  await Promise.all(keys.slice(0, keys.length - maxEntries).map((request) => cache.delete(request)));
+}
+
+function isUsableResponse(url, response) {
+  if (!response || response.status !== 200 || !response.ok) return false;
+  if (response.type !== "basic" && response.type !== "default") return false;
+
+  const pathname = new URL(url, self.location.origin).pathname;
+  const expected = expectedContentTypes(pathname);
+  if (expected.length === 0) return true;
+
+  const contentType = (response.headers.get("content-type") || "").toLowerCase();
+  return expected.some((type) => contentType.includes(type));
+}
+
+function expectedContentTypes(pathname) {
+  const path = pathname.toLowerCase();
+  if (path.endsWith(".css")) return ["text/css"];
+  if (path.endsWith(".js")) return ["javascript", "ecmascript"];
+  if (path.endsWith(".json")) return ["application/json", "application/manifest+json"];
+  if (path.endsWith(".webmanifest")) return ["application/manifest+json", "application/json"];
+  if (path.endsWith(".woff2")) return ["font/woff2", "application/octet-stream"];
+  if (path.endsWith(".woff")) return ["font/woff", "application/font-woff", "application/octet-stream"];
+  if (path.endsWith(".svg")) return ["image/svg+xml"];
+  if (path.endsWith(".png")) return ["image/png"];
+  if (path.endsWith(".jpg") || path.endsWith(".jpeg")) return ["image/jpeg"];
+  if (path.endsWith(".webp")) return ["image/webp"];
+  if (path.endsWith(".avif")) return ["image/avif"];
+  if (path.endsWith(".ico")) return ["image/x-icon", "image/vnd.microsoft.icon"];
+  return [];
+}
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const target = new URL(
+    (event.notification.data && event.notification.data.url) || "/",
+    self.location.origin,
+  ).href;
+
+  event.waitUntil(
+    (async () => {
+      const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+      for (const client of windows) {
+        if (client.url === target && "focus" in client) {
+          await client.focus();
+          return;
+        }
+      }
+      if (self.clients.openWindow) await self.clients.openWindow(target);
+    })(),
+  );
+});

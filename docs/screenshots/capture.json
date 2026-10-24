@@ -1,0 +1,19 @@
+{
+  "home": "F:/Me/MyProjects/MeraCast/docs/screenshots/home-desktop.png",
+  "planner": "F:/Me/MyProjects/MeraCast/docs/screenshots/rain-planner-desktop.png",
+  "radar": "F:/Me/MyProjects/MeraCast/docs/screenshots/radar-desktop.png",
+  "mobile": "F:/Me/MyProjects/MeraCast/docs/screenshots/home-mobile.png",
+  "quick": "F:/Me/MyProjects/MeraCast/docs/screenshots/location-quick-switch.png",
+  "meta": {
+    "version": {
+      "version": "1.0.0-20261023152649689",
+      "builtAt": "2026-10-23T15:26:49.689Z"
+    },
+    "capturedAt": "2026-10-23T15:38:50.104Z",
+    "reducedMotion": true,
+    "css": [
+      "/_next/static/css/50d57a659ad2e40d.css"
+    ],
+    "title": "MeraCast — Know before the clouds do."
+  }
+}

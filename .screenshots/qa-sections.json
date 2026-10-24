@@ -1,0 +1,1592 @@
+[
+  {
+    "viewport": "360",
+    "language": "en",
+    "nowcast": {
+      "top": 1073.15625,
+      "heading": "Minute nowcast",
+      "height": 416.1875
+    },
+    "air": {
+      "top": 3565.21875,
+      "heading": "Air quality",
+      "height": 534.6875
+    },
+    "playbookBefore": {
+      "top": 4756.328125,
+      "heading": "Today’s playbook",
+      "height": 545.6875
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 4756.328125,
+      "heading": "Today’s playbook",
+      "height": 975.6875
+    },
+    "before": {
+      "clientWidth": 360,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "9:00 AM",
+          "left": 118,
+          "right": 168,
+          "center": 143,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "120 min",
+          "left": 239,
+          "right": 286,
+          "center": 262,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 286
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 139,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 139,
+            "height": 130,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "false",
+        "width": 328
+      },
+      "gauge": {
+        "width": 128,
+        "right": 149,
+        "cardWidth": 328
+      }
+    },
+    "after": {
+      "clientWidth": 360,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "9:00 AM",
+          "left": 118,
+          "right": 168,
+          "center": 143,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "120 min",
+          "left": 239,
+          "right": 286,
+          "center": 262,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 286
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 139,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "true",
+        "width": 328
+      },
+      "gauge": {
+        "width": 128,
+        "right": 149,
+        "cardWidth": 328
+      }
+    }
+  },
+  {
+    "viewport": "360",
+    "language": "bn",
+    "nowcast": {
+      "top": 1005.65625,
+      "heading": "মিনিট-পূর্বাভাস",
+      "height": 378.3125
+    },
+    "air": {
+      "top": 3435.75,
+      "heading": "বাতাসের গুণমান",
+      "height": 515.1875
+    },
+    "playbookBefore": {
+      "top": 4609.359375,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 547.875
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 4609.359375,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 977.875
+    },
+    "before": {
+      "clientWidth": 360,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "9:00 AM",
+          "left": 121,
+          "right": 165,
+          "center": 143,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 238,
+          "right": 286,
+          "center": 262,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 286
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 139,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "false",
+        "width": 328
+      },
+      "gauge": {
+        "width": 128,
+        "right": 149,
+        "cardWidth": 328
+      }
+    },
+    "after": {
+      "clientWidth": 360,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "9:00 AM",
+          "left": 121,
+          "right": 165,
+          "center": 143,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": -37,
+          "right": -37,
+          "center": -37,
+          "width": 0,
+          "hidden": true
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 238,
+          "right": 286,
+          "center": 262,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 286
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 139,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 139,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 139,
+            "height": 134,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "true",
+        "width": 328
+      },
+      "gauge": {
+        "width": 128,
+        "right": 149,
+        "cardWidth": 328
+      }
+    }
+  },
+  {
+    "viewport": "768",
+    "language": "en",
+    "nowcast": {
+      "top": 915.75,
+      "heading": "Minute nowcast",
+      "height": 386.3125
+    },
+    "air": {
+      "top": 3390,
+      "heading": "Air quality",
+      "height": 478.1875
+    },
+    "playbookBefore": {
+      "top": 4679.171875,
+      "heading": "Today’s playbook",
+      "height": 553.6875
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 4679.171875,
+      "heading": "Today’s playbook",
+      "height": 973.1875
+    },
+    "before": {
+      "clientWidth": 768,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 143,
+          "right": 192,
+          "center": 168,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 310,
+          "right": 360,
+          "center": 335,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 478,
+          "right": 527,
+          "center": 503,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "120 min",
+          "left": 623,
+          "right": 670,
+          "center": 646,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 670
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 331,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 331,
+            "height": 130,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "false",
+        "width": 720
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 720
+      }
+    },
+    "after": {
+      "clientWidth": 768,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 143,
+          "right": 192,
+          "center": 168,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 310,
+          "right": 360,
+          "center": 335,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 478,
+          "right": 527,
+          "center": 503,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "120 min",
+          "left": 623,
+          "right": 670,
+          "center": 646,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 670
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 331,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "true",
+        "width": 720
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 720
+      }
+    }
+  },
+  {
+    "viewport": "768",
+    "language": "bn",
+    "nowcast": {
+      "top": 915.75,
+      "heading": "মিনিট-পূর্বাভাস",
+      "height": 386.3125
+    },
+    "air": {
+      "top": 3408.15625,
+      "heading": "বাতাসের গুণমান",
+      "height": 478.1875
+    },
+    "playbookBefore": {
+      "top": 4699.328125,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 555.875
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 4699.328125,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 975.375
+    },
+    "before": {
+      "clientWidth": 768,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 145,
+          "right": 190,
+          "center": 168,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 313,
+          "right": 357,
+          "center": 335,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 480,
+          "right": 525,
+          "center": 503,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 622,
+          "right": 670,
+          "center": 646,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 670
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 331,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "false",
+        "width": 720
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 720
+      }
+    },
+    "after": {
+      "clientWidth": 768,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 145,
+          "right": 190,
+          "center": 168,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 313,
+          "right": 357,
+          "center": 335,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 480,
+          "right": 525,
+          "center": 503,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 622,
+          "right": 670,
+          "center": 646,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 670
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 331,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 331,
+            "height": 131,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "true",
+        "width": 720
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 720
+      }
+    }
+  },
+  {
+    "viewport": "1280",
+    "language": "en",
+    "nowcast": {
+      "top": 875.5,
+      "heading": "Minute nowcast",
+      "height": 407.1875
+    },
+    "air": {
+      "top": 1959.6875,
+      "heading": "Air quality",
+      "height": 616.1875
+    },
+    "playbookBefore": {
+      "top": 3218.8125,
+      "heading": "Today’s playbook",
+      "height": 415.1875
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 3218.8125,
+      "heading": "Today’s playbook",
+      "height": 703.1875
+    },
+    "before": {
+      "clientWidth": 1280,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 96,
+          "right": 145,
+          "center": 120,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 216,
+          "right": 266,
+          "center": 241,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 337,
+          "right": 386,
+          "center": 361,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "120 min",
+          "left": 434,
+          "right": 482,
+          "center": 458,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 482
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 155,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "false",
+        "width": 532
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 374
+      }
+    },
+    "after": {
+      "clientWidth": 1280,
+      "axis": [
+        {
+          "text": "Now",
+          "left": 0,
+          "right": 26,
+          "center": 13,
+          "width": 26,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 96,
+          "right": 145,
+          "center": 120,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 216,
+          "right": 266,
+          "center": 241,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 337,
+          "right": 386,
+          "center": 361,
+          "width": 49,
+          "hidden": false
+        },
+        {
+          "text": "120 min",
+          "left": 434,
+          "right": 482,
+          "center": 458,
+          "width": 47,
+          "hidden": false
+        },
+        {
+          "chartWidth": 482
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 155,
+            "height": 131,
+            "text": "UmbrellaTake oneBring an umbrella — rain"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "SunscreenApply SPF 30+Hat and breathable"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "JacketNot neededLight, breathable cotton"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "Outdoor workoutTrain indoorsTrain indoor"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "DrivingReduce speedReduce speed"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "Laundry dryingDry indoorsDry indoors"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Car washRain will undo itRain will undo "
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "AllergyLow riskLow risk"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Kite flyingToo gusty or calmToo gusty or"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "FishingNot idealNot ideal"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "StargazingKeep the telescope insideCloud"
+          },
+          {
+            "width": 155,
+            "height": 134,
+            "text": "Mosquito activityLow activityLow activit"
+          }
+        ],
+        "expanded": "true",
+        "width": 532
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 374
+      }
+    }
+  },
+  {
+    "viewport": "1280",
+    "language": "bn",
+    "nowcast": {
+      "top": 856,
+      "heading": "মিনিট-পূর্বাভাস",
+      "height": 386.3125
+    },
+    "air": {
+      "top": 1919.3125,
+      "heading": "বাতাসের গুণমান",
+      "height": 634.34375
+    },
+    "playbookBefore": {
+      "top": 3162.59375,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 417.375
+    },
+    "expanded": true,
+    "playbook": {
+      "top": 3162.59375,
+      "heading": "আজকের পরিকল্পনা",
+      "height": 698.375
+    },
+    "before": {
+      "clientWidth": 1280,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 98,
+          "right": 143,
+          "center": 120,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 218,
+          "right": 263,
+          "center": 241,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 339,
+          "right": 384,
+          "center": 361,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 434,
+          "right": 482,
+          "center": 458,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 482
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 155,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "false",
+        "width": 532
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 374
+      }
+    },
+    "after": {
+      "clientWidth": 1280,
+      "axis": [
+        {
+          "text": "এখন",
+          "left": 0,
+          "right": 22,
+          "center": 11,
+          "width": 22,
+          "hidden": false
+        },
+        {
+          "text": "8:30 AM",
+          "left": 98,
+          "right": 143,
+          "center": 120,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:00 AM",
+          "left": 218,
+          "right": 263,
+          "center": 241,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "9:30 AM",
+          "left": 339,
+          "right": 384,
+          "center": 361,
+          "width": 45,
+          "hidden": false
+        },
+        {
+          "text": "120 মিনিট",
+          "left": 434,
+          "right": 482,
+          "center": 458,
+          "width": 48,
+          "hidden": false
+        },
+        {
+          "chartWidth": 482
+        }
+      ],
+      "playbook": {
+        "count": 12,
+        "cards": [
+          {
+            "width": 155,
+            "height": 131,
+            "text": "ছাতাসাথে নিনছাতা নিন — পরে বৃষ্টির সম্ভা"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "সানস্ক্রিনSPF ৩০+ লাগানটুপি ও ঢিলেঢালা প"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "জ্যাকেটদরকার নেইহালকা, বাতাস চলাচলকারী স"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "বাইরের ব্যায়ামঘরে ব্যায়ামঘরে ব্যায়াম"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "গাড়ি চালানোগতি কমানগতি কমান"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "কাপড় শুকানোঘরে শুকানঘরে শুকান"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "গাড়ি ধোয়াবৃষ্টিতে ধোয়া নষ্টবৃষ্টিতে ধ"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "অ্যালার্জিকম ঝুঁকিকম ঝুঁকি"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "ঘুড়ি ওড়ানোবেশি দমকা বা স্থিরবেশি দমকা "
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "মাছ ধরাবেশ উপযুক্ত নয়বেশ উপযুক্ত নয়"
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "তারাখেলাটেলিস্কোপ ঘরেই রাখুনমেঘ পথ আটকে "
+          },
+          {
+            "width": 155,
+            "height": 131,
+            "text": "মশার উপদ্রবকম উপদ্রবকম উপদ্রব"
+          }
+        ],
+        "expanded": "true",
+        "width": 532
+      },
+      "gauge": {
+        "width": 128,
+        "right": 153,
+        "cardWidth": 374
+      }
+    }
+  }
+]

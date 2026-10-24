@@ -1,0 +1,60 @@
+{
+  "id": "/",
+  "name": "MeraCast — Know before the clouds do",
+  "short_name": "MeraCast",
+  "description": "A cinematic, bilingual weather experience by MeraVex. Hourly and 16-day forecasts, live radar, air quality, astronomy and the Rain Planner.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#071019",
+  "theme_color": "#071019",
+  "categories": ["weather", "utilities", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Weather",
+      "short_name": "Weather",
+      "description": "Current conditions and the forecast",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Rain Planner",
+      "short_name": "Planner",
+      "description": "Will it rain at your moment?",
+      "url": "/rain-planner",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Live radar",
+      "short_name": "Radar",
+      "description": "Watch the rain move",
+      "url": "/radar",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
