@@ -8,7 +8,7 @@ MeraCast is a bilingual (English / বাংলা) weather studio by MeraVex. I
 
 Built with Next.js 14 App Router, strict TypeScript, Tailwind CSS, Framer Motion, Recharts, MapLibre GL, Zustand and TanStack Query. No API keys, accounts or trackers are required.
 
-> **Live demo:** _Add the deployed URL here._ Deployment steps are documented below.
+> **Live demo:** _https://meracast-by-meravex.vercel.app/_ Deployment steps are documented below.
 
 ## Screenshots
 
